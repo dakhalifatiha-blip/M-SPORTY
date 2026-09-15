@@ -185,23 +185,23 @@
       .model-cta:hover { background: var(--ms-gold-soft); color: #090909; }
       @media (max-width: 900px) { .model-showcase { grid-template-columns: minmax(0, 1fr) minmax(230px, 0.82fr); } .model-copy { padding: 30px; } }
       @media (max-width: 640px) { .model-showcase { display: block; min-height: 0; } .model-visual { min-height: 280px; padding: 12px; } .model-visual img { max-height: 320px; } .model-copy { padding: 28px 24px 30px; } .model-title { font-size: 2.2rem; } }
-      @media (min-width: 390px) and (max-width: 768px) {
+      @media (min-width: 200px) and (max-width: 768px) {
         .hero-shell { padding-top: 1.5rem; padding-bottom: 2.5rem; }
-        .hero-shell > .max-w-7xl { grid-template-columns: minmax(0, 1fr) minmax(125px, 0.68fr); gap: 0.75rem; align-items: center; }
-        .hero-visual { order: 0; min-height: 230px; }
+        .hero-shell > .max-w-7xl { grid-template-columns: minmax(0, 1fr) minmax(90px, 0.68fr); gap: 0.5rem; align-items: center; }
+        .hero-visual { order: 0; min-height: 180px; }
         .hero-visual > div { height: auto; aspect-ratio: 1 / 1; }
         .hero-visual .hero-image { height: auto; aspect-ratio: 1 / 1; }
         .hero-visual .product-image { max-height: 125px; }
-        #hero-left h1 { font-size: 2.65rem; }
+        #hero-left h1 { font-size: clamp(1.65rem, 8vw, 2.65rem); }
         #hero-left .mt-5 { margin-top: 0.85rem; }
-        #hero-left .text-xl { font-size: 0.92rem; line-height: 1.35; }
-        #hero-left .mt-8 { margin-top: 1.25rem; }
-        #hero-left .icon-btn { width: 34px; height: 34px; font-size: 0.85rem; border-radius: 10px; }
-        #hero-left .text-sm { font-size: 0.68rem; }
-        #hero-left .text-xs { font-size: 0.58rem; }
-        #hero-left .price-box { padding: 0.75rem; gap: 0.5rem; }
-        #hero-left .price-box .text-3xl { font-size: 1.55rem; }
-        #hero-left > .mt-8:last-child a { padding: 0.75rem 0.9rem; font-size: 0.68rem; }
+        #hero-left .text-xl { font-size: clamp(0.62rem, 3vw, 0.92rem); line-height: 1.35; }
+        #hero-left .mt-8 { margin-top: 0.9rem; }
+        #hero-left .icon-btn { width: 30px; height: 30px; font-size: 0.75rem; border-radius: 9px; }
+        #hero-left .text-sm { font-size: clamp(0.52rem, 2vw, 0.68rem); }
+        #hero-left .text-xs { font-size: clamp(0.46rem, 1.8vw, 0.58rem); }
+        #hero-left .price-box { padding: 0.55rem; gap: 0.35rem; }
+        #hero-left .price-box .text-3xl { font-size: clamp(1rem, 5vw, 1.55rem); }
+        #hero-left > .mt-8:last-child a { padding: 0.6rem 0.7rem; font-size: clamp(0.52rem, 2vw, 0.68rem); }
         .icon-btn {
           width: 34px;
           height: 34px;
@@ -323,17 +323,17 @@
 
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-7">
             <article class="model-showcase">
-              <div class="model-visual"><img id="card1-img" src="public/assets/modele1-noir.png" alt="M SPORTY modèle 01 Urban Classic" /></div>
+              <div class="model-visual"><img id="card1-img" src="public/assets/modele 1.png" alt="M SPORTY modèle 01 Urban Classic" /></div>
               <div class="model-copy"><div class="model-kicker">Modèle 01</div><div class="model-details"><span class="model-detail">Homme</span><span class="model-detail model-price">199 DH</span></div><h3 class="model-title">Urban<br />Classic</h3><div class="model-rule"></div><p class="model-description">Un style intemporel pour toutes vos aventures, avec un confort pensé pour le quotidien.</p><div class="model-sizes">Tailles disponibles : 36 - 37 - 38 - 39 - 40</div><div class="model-colors"><div class="model-colors-label">Couleurs disponibles</div><div class="model-swatches">
-                <button class="swatch-btn model-swatch is-selected" data-target="card1-img" data-src="public/assets/modele1-noir.png" title="Noir"><span class="model-swatch-dot" style="background:#171717"></span>Noir</button>
+                <button class="swatch-btn model-swatch" data-target="card1-img" data-src="public/assets/modele1-noir.png" title="Noir"><span class="model-swatch-dot" style="background:#171717"></span>Noir</button>
                 <button class="swatch-btn model-swatch" data-target="card1-img" data-src="public/assets/modele1-gri.png" title="Gris"><span class="model-swatch-dot" style="background:#b8bac0"></span>Gris</button>
                 <button class="swatch-btn model-swatch" data-target="card1-img" data-src="public/assets/modele1-blue.png" title="Bleu marine"><span class="model-swatch-dot" style="background:#18254b"></span>Bleu marine</button>
               </div></div></div>
             </article>
             <article class="model-showcase">
-              <div class="model-visual"><img id="card2-img" src="public/assets/modele2-noir.png" alt="M SPORTY modèle 02 Sport Runner" /></div>
+              <div class="model-visual"><img id="card2-img" src="public/assets/modele2.png" alt="M SPORTY modèle 02 Sport Runner" /></div>
               <div class="model-copy"><div class="model-kicker">Modèle 02</div><div class="model-details"><span class="model-detail">Homme</span><span class="model-detail model-price">199 DH</span></div><h3 class="model-title">Sport<br />Runner</h3><div class="model-rule"></div><p class="model-description">Performance et confort, même au quotidien, dans une silhouette faite pour avancer.</p><div class="model-sizes">Tailles disponibles : 36 - 37 - 38 - 39 - 40</div><div class="model-colors"><div class="model-colors-label">Couleurs disponibles</div><div class="model-swatches">
-                <button class="swatch-btn model-swatch is-selected" data-target="card2-img" data-src="public/assets/modele2-noir.png" title="Noir"><span class="model-swatch-dot" style="background:#171717"></span>Noir</button>
+                <button class="swatch-btn model-swatch" data-target="card2-img" data-src="public/assets/modele2-noir.png" title="Noir"><span class="model-swatch-dot" style="background:#171717"></span>Noir</button>
                 <button class="swatch-btn model-swatch" data-target="card2-img" data-src="public/assets/modele2-gri.png" title="Gris"><span class="model-swatch-dot" style="background:#8a8d93"></span>Gris</button>
                 <button class="swatch-btn model-swatch" data-target="card2-img" data-src="public/assets/modele2-bluemarine.png" title="Bleu marine"><span class="model-swatch-dot" style="background:#193d72"></span>Bleu marine</button>
                 <button class="swatch-btn model-swatch" data-target="card2-img" data-src="public/assets/modele2-blanc.png" title="Blanc"><span class="model-swatch-dot" style="background:#f4f4ef"></span>Blanc</button>
@@ -343,18 +343,18 @@
               </div></div></div>
             </article>
             <article class="model-showcase">
-              <div class="model-visual"><img id="card3-img" src="public/assets/model3-noir_blan.png" alt="M SPORTY modèle 03 Lite Confort" /></div>
+              <div class="model-visual"><img id="card3-img" src="public/assets/modele 3.png" alt="M SPORTY modèle 03 Lite Confort" /></div>
               <div class="model-copy"><div class="model-kicker">Modèle 03</div><div class="model-details"><span class="model-detail">Femme</span><span class="model-detail model-price">199 DH</span></div><h3 class="model-title">Lite<br />Confort</h3><div class="model-rule"></div><p class="model-description">Légèreté, douceur et liberté de mouvement dans une ligne féminine et facile à porter.</p><div class="model-sizes">Tailles disponibles : 36 - 37 - 38 - 39 - 40</div><div class="model-colors"><div class="model-colors-label">Couleurs disponibles</div><div class="model-swatches">
-                <button class="swatch-btn model-swatch is-selected" data-target="card3-img" data-src="public/assets/model3-noir_blan.png" title="Noir et blanc"><span class="model-swatch-dot" style="background:linear-gradient(135deg,#171717 50%,#f4f4ef 50%)"></span>Noir et blanc</button>
+                <button class="swatch-btn model-swatch" data-target="card3-img" data-src="public/assets/model3-noir_blan.png" title="Noir et blanc"><span class="model-swatch-dot" style="background:linear-gradient(135deg,#171717 50%,#f4f4ef 50%)"></span>Noir et blanc</button>
                 <button class="swatch-btn model-swatch" data-target="card3-img" data-src="public/assets/model3-jeune.png" title="Jaune"><span class="model-swatch-dot" style="background:#ead89d"></span>Jaune</button>
                 <button class="swatch-btn model-swatch" data-target="card3-img" data-src="public/assets/modele3-gri.png" title="Gris"><span class="model-swatch-dot" style="background:#adb0b2"></span>Gris</button>
                 <button class="swatch-btn model-swatch" data-target="card3-img" data-src="public/assets/model3-beige.png" title="Beige"><span class="model-swatch-dot" style="background:#e8d7b7"></span>Beige</button>
               </div></div></div>
             </article>
             <article class="model-showcase">
-              <div class="model-visual"><img id="card4-img" src="public/assets/modele4-noir.png" alt="M SPORTY modèle 04 Street Flex" /></div>
+              <div class="model-visual"><img id="card4-img" src="public/assets/modele 4.png" alt="M SPORTY modèle 04 Street Flex" /></div>
               <div class="model-copy"><div class="model-kicker">Modèle 04</div><div class="model-details"><span class="model-detail">Femme</span><span class="model-detail model-price">199 DH</span></div><h3 class="model-title">Street<br />Flex</h3><div class="model-rule"></div><p class="model-description">Un look moderne et polyvalent pour chaque journée, avec une présence résolument premium.</p><div class="model-sizes">Tailles disponibles : 36 - 37 - 38 - 39 - 40</div><div class="model-colors"><div class="model-colors-label">Couleurs disponibles</div><div class="model-swatches">
-                <button class="swatch-btn model-swatch is-selected" data-target="card4-img" data-src="public/assets/modele4-noir.png" title="Noir"><span class="model-swatch-dot" style="background:#171717"></span>Noir</button>
+                <button class="swatch-btn model-swatch" data-target="card4-img" data-src="public/assets/modele4-noir.png" title="Noir"><span class="model-swatch-dot" style="background:#171717"></span>Noir</button>
                 <button class="swatch-btn model-swatch" data-target="card4-img" data-src="public/assets/modele4-blanc.png" title="Blanc"><span class="model-swatch-dot" style="background:#f5f4ef"></span>Blanc</button>
                 <button class="swatch-btn model-swatch" data-target="card4-img" data-src="public/assets/modele4-gri.png" title="Gris"><span class="model-swatch-dot" style="background:#a9a9a5"></span>Gris</button>
                 <button class="swatch-btn model-swatch" data-target="card4-img" data-src="public/assets/modele4-beige.png" title="Beige"><span class="model-swatch-dot" style="background:#e5d2ae"></span>Beige</button>
